@@ -1,0 +1,266 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+
+nav{
+    max-width: 50000px;
+    margin: auto;
+    background-color: #020202;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.menu-horizontal li{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.title h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.servicio{
+    padding: 50px 0px;
+}
+.centrar h1{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    position: absolute;
+    right: 600px;
+    top: 170px;
+}
+
+.texto-naranja{
+    color: #F94F2B;
+}
+.contenedores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -50px;
+
+}
+.contenedores .contenidos{
+    width: 45%;
+    height: 150px;
+    position: relative;
+    padding: 25px;
+    border: 1px solid #c1c1c1;
+    text-align: center;
+    box-shadow: 0px 10px 10px #ccc;
+    margin-bottom: 25px;
+    margin-right: 35px;
+    top: 180px;
+    right: -25px;
+}
+.contenidos .parrafo2{
+    position: relative;
+    text-align: center;
+    right: -20px;
+}
+.img-servicios{
+    width: 30%;
+    float: left;
+}
+.boton {
+ 
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #53db34;
+  color: #000000;
+  background-color: rgb(19, 222, 12);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  top: 650px;
+  right: 650px;
+}
+.boton:hover{
+background-color: #77db34;
+  color: #ffffff;
+}
+.palomas{
+    margin-top: 50px;
+}
+.palomas img{
+    position: relative;
+    right: -100px;
+    width: 85%;
+    height: 500px;
+    top: 400px;
+}
+.palomas .hola{
+    position: absolute;
+    top: 170%;
+    left: 40%;
+    text-align: left;
+    transform: translateX(-50%) translateY(-50%);
+    color: #000000;
+}
+.palomas h5{
+    font-size: 35px;;
+}
+.palomas a{
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(136, 255, 0);
+    border: 3px solid #000000;
+    position: relative;
+    top: 240px;
+    left: 150px;
+}
+.palomas a:hover{
+    background-color: rgb(0, 252, 0);
+    color: #ffffff;
+}
+.titu h2{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    position: relative;
+    top: 350px;
+    left: 480px;
+}
+.titu p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 410px;
+}
+.pie-pagina{
+    width: 100%;
+    height: 400px;
+    background-color: #0a141d;
+    position: relative;
+    top: 650px;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #53db34;
+  color: #000000;
+  background-color: rgb(19, 222, 12);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  top: 250px;
+  right: 670px;
+}
+.btn:hover{
+background-color: #77db34;
+  color: #ffffff;
+}

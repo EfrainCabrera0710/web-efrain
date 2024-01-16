@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reserva.css">
+</head>
+
+<body>
+    <h1>BIENVENIDOS A CORPORACIÓN CAR & RICK</h1>
+    <header>
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li>
+                    <a href="quienes.html">¿Quienes Somos?</a>
+                    <ul class="menu-vertical">
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form action="https://formspree.io/f/xeqbbozy" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="Dirección">Dirección:</label>
+        <input type="addres" id="Dirección" name="Dirección" required>
+
+        <label for="fecha de reserva">Fecha de Reserva:</label>
+        <input type="date" id="fecha de reserva" name="fecha de reserva" required>
+
+        <label for="hora de reserva">Hora de Reserva:</label>
+        <input type="time" id="hora de reserva" name="hora de reserva" required>
+
+        <label for="TipoFumigación">Tipo de Servicio:</label>
+        <select id="TipoFumigación" name="TipoFumigación" required>
+            <option value="Fumigacion Roedor">Fumigacion Roedor</option>
+            <option value="Fumigacion Insectos">Fumigacion Insectos</option>
+            <option value="Fumigacion Covid-19">Fumigacion Covid-19</option>
+            <option value="Fumigacion Nematodos">Fumigacion Nematodos</option>
+            <option value="Fumigacion Palomas">Fumigacion Palomas</option>
+        </select>
+
+        <button type="submit">Reservar</button>
+    </form>
+
+</body>
+
+</html>
